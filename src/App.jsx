@@ -19,7 +19,7 @@ function App() {
     })
   }
   const totalAmount = expenseData.reduce((sum, expense) => {
-  // return sum + parseFloat(expense.amount || 0);
+  return sum + parseFloat(expense.amount || 0);
   }, 0);
 
   const deleteExpense = (id) => {
